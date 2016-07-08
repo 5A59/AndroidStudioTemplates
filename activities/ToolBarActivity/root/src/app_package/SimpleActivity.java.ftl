@@ -14,9 +14,12 @@ public class ${activityClass} extends ${superClass} {
 <#if generateLayout>
         setContentView(R.layout.${layoutName});
 </#if>
-		initToolBar();
+	    init();
     }
 
+	private void init() {
+		initToolBar();
+	}
 	
 	private void initToolBar() {
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

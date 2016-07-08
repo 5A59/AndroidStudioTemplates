@@ -9,6 +9,9 @@
 	<merge from="root/res/values/styles.xml.ftl"
 		to="${escapeXmlAttribute(resOut)}/values/styles.xml" />
 
+	<merge from="root/AndroidManifest.xml.ftl"
+		to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
+
     <open file="${escapeXmlAttribute(srcOut)}/${activityClass}.java" />
 
 </recipe>

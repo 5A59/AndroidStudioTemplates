@@ -5,7 +5,6 @@
             <#if isNewProject>
             android:label="@string/app_name"
             <#else>
-            android:label="@string/title_${activityToLayout(activityClass)}"
             </#if>
             >
             <#if isLauncher>
